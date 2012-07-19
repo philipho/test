@@ -14,7 +14,7 @@ spec = Gem::Specification.new do |s|
 end
 
 Rake::GemPackageTask.new(spec) do |pkg|
-    pkg.need_tar = true
+    pkg.need_tar = false 
 end
 
 task :default => "pkg/#{spec.name}-#{spec.version}.gem" do
