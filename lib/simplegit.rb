@@ -5,7 +5,7 @@ class SimpleGit
     @git_dir = File.expand_path(git_dir)
   end
   
-  def show(treeish = 'master')
+  def show(treeish = 'aaa-master')
     command("git show #{treeish}")
   end
 
